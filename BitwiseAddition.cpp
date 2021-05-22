@@ -40,9 +40,9 @@ int bitwise_sum(int first = 0, int second = 0)
 {
   while (second) // second != 0
   {
-    int carry = first & second; // Перенос.
-    first ^= second;            // XOR.
-    second = carry << 1;        // Сдвиг влево на 1.
+    int carry = first & second;
+    first ^= second;
+    second = carry << 1;
   }
 
   return first;
