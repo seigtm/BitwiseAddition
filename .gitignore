@@ -1,5 +1,6 @@
 # Build folder.
 build
+deploy
 
 # Prerequisites
 *.d

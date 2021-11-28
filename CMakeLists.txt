@@ -37,7 +37,7 @@ if (DEPLOY)
     add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
         COMMAND "${CMAKE_SOURCE_DIR}/scripts/deploy.sh"
             "${CMAKE_SOURCE_DIR}/build/MyMathExample"           # Executable path.
-            "${CMAKE_SOURCE_DIR}/build/MyMath/libMyMath.so"     # Library path.
+            "${CMAKE_SOURCE_DIR}/build/myMath/libMyMath.so"     # Library path.
             "${CMAKE_SOURCE_DIR}/deploy"                        # Destination path.
         COMMENT "Running deploy"
     )
